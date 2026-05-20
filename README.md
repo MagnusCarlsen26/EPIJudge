@@ -40,6 +40,21 @@ Check out these one minute videos to see how easy it is to get started with the 
 
     $ python3 <program_name>.py
 
+### Python Practice UI
+
+The local browser practice workspace is Python-first and runs from this repo:
+
+    $ pip install -r requirements-practice-ui.txt
+    $ uvicorn practice_ui.server:app --reload --host 127.0.0.1 --port 8000
+
+Then open:
+
+    http://127.0.0.1:8000
+
+The UI reads and writes files under `epi_judge_python/`, runs the existing judge
+command with `../test_data`, and stores local notes/bookmarks/history in
+`.practice_ui/state.json`.
+
 #### Java
 
 Use the [`Makefile`](https://github.com/adnanaziz/EPIJudge/blob/master/epi_judge_java/Makefile). 
